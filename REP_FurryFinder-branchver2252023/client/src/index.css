@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+ }
+
+.navbar {
+  padding       : 20px;
+  display       : flex;
+  align-items   : center;
+  max-width     : 600px;
+  margin        : 0 auto;
+  border-bottom : 1px solid #0d6819b0;
+}
+.navbar h1 {
+  color: #0d6819b0;
+}
+.navbar .links {
+  margin-left : auto;
+  color       : #0d6819b0;
+}
+.navbar a {
+  margin-left     : 16px;
+  text-decoration : none;
+  padding         : 6px;
+  color           : #0d6819b0;
+}
+.navbar a:hover {
+  color           : #1ecd36b0;
+}
+.navbar .logo{
+  display         : flex;
+}
+
+.content {
+  max-width      : 600px;
+  margin         : 40px auto;
+  padding        : 20px;
+}
+
+.button {
+  width             : 400px;
+  margin            : 40px auto;
+  padding           : 20px;
+  background-color  : rgb(19, 88, 18);
+  color:white;
+  font-size: medium;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(94, 93, 93, 0.75);
+  border-radius: 10px;
+}
+
+.button1
+{
+  width: 200px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: rgb(19, 88, 18);
+  color:white;
+  font-size: medium;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(94, 93, 93, 0.75); 
+}
+.button3
+{
+  width: 350px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(19, 88, 18);
+  color:white;
+  font-size: medium;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(94, 93, 93, 0.75); 
+  border-radius: 10px;
+}
+.color
+{
+  color: #0d6819b0;
+  font-size:medium;
+}
+.label
+{
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(240, 226, 187); 
+  color:white;
+  font-size: medium;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(94, 93, 93, 0.75);
+}
+.label2
+{
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #0d6819b0;
+  font-size: large;
+  text-align: center;
+}
+.label3
+{
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(19, 88, 18); 
+  color:white;
+  font-size: medium;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(94, 93, 93, 0.75);
+}
+.backgreen
+{ width: 100px;
+  background-color: rgb(19, 88, 18);
+  padding: 10px;
+  margin:20px, 0px, 0px, 20px;
+  color: white;
+}
+.backwhite
+{ width: 200px;
+  background-color: white(19, 88, 18);
+  padding:10px;
+  margin:20px, 0px, 0px, 20px;
+  font-size: medium;
+}
+.backgreen-center{
+  width: 380px;
+  background-color: rgb(19, 88, 18);
+  padding: 10px;
+  margin:20px, 0px, 0px, 20px;
+  color: white;
+}
+.all{
+  display: grid;
+ grid-template-columns: 400px 400px 400px;
+ grid-template-rows: 300px ;
+ grid-column-gap: 5px;
+ flex-wrap: wrap;
+ position: fixed;
+ padding: 10px 0px 0px 20px;
+ margin: 20px;
+ top: 40%;
+ left: 10%;
+}
+.box{
+  width:50%;
+ height: 150px;
+ margin: 40px auto;
+ background-color: rgb(19, 88, 18);
+ color:white;
+ font-size: medium;
+ text-align: center;
+ padding: 20px;
+ box-shadow: 10px 10px 5px 0px rgba(94, 93, 93, 0.75);
+}
+.leaflet-container {
+  width: 100%;
+  height: 60vh; 
+  border: 5px solid rgb(19, 88, 18);
+}
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+table {
+  width:400px;
+  border: 1px solid; 
+  text-align: center;
+}
+table tr:nth-of-type(2n+1) {
+  background-color: rgb(19, 88, 18);
+}
+table tr:nth-of-type(2n) {
+  background-color: rgb(103, 167, 102);
+ }
+
+ th{
+  background-color:rgb(238, 215, 154); 
+  color: rgb(19, 88, 18);
+  text-align: center;
+  font-style: oblique;
+  font-size: 18px;
+}
+
+td{
+  font-size: 16px;
+  text-align: left;
+}
+
+td button{
+  align-content  : center;
+  align-items    : center;
+}
+
+@media screen and (max-width:728px) {
+  .all{
+    display: block;
+    flex-wrap:none ;
+  }
+  .box{
+      width:100%;
+      margin-bottom: 12px;
+      height: 100px;
+    }
+  }
